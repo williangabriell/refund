@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_wizard_answer">
+    <sys_wizard_answer action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <answer>New Refund Request</answer>
+        <button_label/>
+        <dependent_value/>
+        <element/>
+        <name>Refund Request</name>
+        <next_question/>
+        <order>100</order>
+        <payload_name/>
+        <question display_value="Task" name="Task">747fc2bc9d12321055903da570aff023</question>
+        <roles/>
+        <script/>
+        <sys_class_name>sys_wizard_answer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-27 14:07:41</sys_created_on>
+        <sys_id>6839d4cd83240f1027aba6d0deaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refund Request</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_update_name>sys_wizard_answer_6839d4cd83240f1027aba6d0deaad368</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-27 14:07:41</sys_updated_on>
+        <table/>
+        <target_url>x_1902784_refund_refund_request.do</target_url>
+        <type>1</type>
+    </sys_wizard_answer>
+</record_update>
