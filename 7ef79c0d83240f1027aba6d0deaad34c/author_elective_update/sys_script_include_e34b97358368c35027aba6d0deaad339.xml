@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1902784_refund.RefundCurrencyConverter</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>RefundCurrencyConverter</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var RefundCurrencyConverter = Class.create();
+RefundCurrencyConverter.prototype = {
+    initialize: function() {},
+
+    getUsdRate: function() {
+        try {
+            var r = new sn_ws.RESTMessageV2('FreeCurrencyAPI', 'Default GET');
+            
+            // O ServiceNow enviará automaticamente o Header configurado no registro REST
+            var response = r.execute();
+            
+            var responseBody = response.getBody();
+            if (responseBody) {
+                responseBody = responseBody.toString(); 
+            }
+            
+            var httpStatus = response.getStatusCode();
+
+            // Log de depuração para validar a resposta
+            gs.info("Refund Integration - Status: " + httpStatus + " | Body: " + responseBody);
+
+            if (httpStatus == 200 && responseBody) {
+                var obj = JSON.parse(responseBody);
+                
+                if (obj && obj.data && obj.data.USD) {
+                    // Retorna a taxa como string para o Flow
+                    return obj.data.USD.toString(); 
+                }
+            } else {
+                gs.error("RefundCurrencyConverter: Falha na API. Status " + httpStatus);
+            }
+        } catch (ex) {
+            gs.error("RefundCurrencyConverter Erro Crítico: " + ex.message);
+        }
+        
+        return "0"; 
+    },
+
+    type: 'RefundCurrencyConverter'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-30 12:13:59</sys_created_on>
+        <sys_id>e34b97358368c35027aba6d0deaad339</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>RefundCurrencyConverter</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_update_name>sys_script_include_e34b97358368c35027aba6d0deaad339</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-30 12:38:20</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</application>
+        <file_path/>
+        <instance_id>acb5df9afbd7dad0843df4344eefdc1d</instance_id>
+        <instance_name>dev292903</instance_name>
+        <name>sys_script_include_e34b97358368c35027aba6d0deaad339</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1902784_refund.RefundCurrencyConverter&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;RefundCurrencyConverter&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var RefundCurrencyConverter = Class.create();
+RefundCurrencyConverter.prototype = {
+    initialize: function() {},
+
+    getUsdRate: function() {
+        try {
+            var r = new sn_ws.RESTMessageV2('FreeCurrencyAPI', 'Default GET');
+            
+            // O ServiceNow enviará automaticamente o Header configurado no registro REST
+            var response = r.execute();
+            
+            var responseBody = response.getBody();
+            if (responseBody) {
+                responseBody = responseBody.toString(); 
+            }
+            
+            var httpStatus = response.getStatusCode();
+
+            // Log de depuração para validar a resposta
+            gs.info("Refund Integration - Status: " + httpStatus + " | Body: " + responseBody);
+
+            if (httpStatus == 200 &amp;&amp; responseBody) {
+                var obj = JSON.parse(responseBody);
+                
+                if (obj &amp;&amp; obj.data &amp;&amp; obj.data.USD) {
+                    // Retorna a taxa como string para o Flow
+                    return obj.data.USD.toString(); 
+                }
+            } else {
+                gs.error("RefundCurrencyConverter: Falha na API. Status " + httpStatus);
+            }
+        } catch (ex) {
+            gs.error("RefundCurrencyConverter Erro Crítico: " + ex.message);
+        }
+        
+        return "0"; 
+    },
+
+    type: 'RefundCurrencyConverter'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-30 12:13:59&lt;/sys_created_on&gt;&lt;sys_id&gt;e34b97358368c35027aba6d0deaad339&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;RefundCurrencyConverter&lt;/sys_name&gt;&lt;sys_package display_value="Refund" source="x_1902784_refund"&gt;7ef79c0d83240f1027aba6d0deaad34c&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Refund"&gt;7ef79c0d83240f1027aba6d0deaad34c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_e34b97358368c35027aba6d0deaad339&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-30 12:38:20&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>337211911</payload_hash>
+        <record_name>RefundCurrencyConverter</record_name>
+        <reverted_from/>
+        <source>87abf50983604f1027aba6d0deaad340</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-30 12:38:20</sys_created_on>
+        <sys_id>4d81a7b183a8c35027aba6d0deaad380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dde65b5f70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-30 12:38:20</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>c981a7b15da8c3504451cbaf9b9a8a7f</update_guid>
+        <update_guid_history>c981a7b15da8c3504451cbaf9b9a8a7f:337211911,7690ab7d7268c3508835d4db0285de1a:292900575,492067f9a068c350376b307010c1ab5b:335337174,6d0f57f9bd68c3505310709353af084c:1031306508,315d5379b768c3504dd401c842949f40:831180398,94fbdfb52f68c35061333313f06df952:-2017187525</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-30 12:48:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1ef2555805da41b8978092927ff50e84</sys_id>
+        <sys_metadata>e34b97358368c35027aba6d0deaad339</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RefundCurrencyConverter</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_scope_delete display_value="">876ee2fb12a14c5392e3855a5ffd5ec9</sys_scope_delete>
+        <sys_update_name>sys_script_include_e34b97358368c35027aba6d0deaad339</sys_update_name>
+        <sys_update_version display_value="sys_script_include_e34b97358368c35027aba6d0deaad339">4d81a7b183a8c35027aba6d0deaad380</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-30 12:48:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

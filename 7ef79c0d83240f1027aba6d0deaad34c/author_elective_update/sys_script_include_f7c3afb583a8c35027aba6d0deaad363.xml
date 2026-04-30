@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1902784_refund.RefundCurrencyConverter</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>RefundCurrencyConverter</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var RefundCurrencyConverter = Class.create();
+RefundCurrencyConverter.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getUSDRate: function() {
+        try {
+            var apiKey = gs.getProperty('x_[scope].reimbursement.fx_api_key');
+
+            if (!apiKey) {
+                gs.error('ReimbursementCurrencyAjax: API Key não configurada.');
+                return JSON.stringify({
+                    success: false,
+                    error: 'API Key não configurada.'
+                });
+            }
+
+            var request = new sn_ws.RESTMessageV2();
+            request.setHttpMethod('GET');
+            request.setEndpoint(
+                'https://api.freecurrencyapi.com/v1/latest' +
+                '?apikey=' + apiKey +
+                '&base_currency=BRL' +
+                '&currencies=USD'
+            );
+            request.setHttpTimeout(10000); // 10 segundos
+
+            var response = request.execute();
+            var statusCode = response.getStatusCode();
+
+            if (statusCode !== 200) {
+                gs.error('ReimbursementCurrencyAjax: HTTP ' + statusCode);
+                return JSON.stringify({
+                    success: false,
+                    error: 'Erro HTTP: ' + statusCode
+                });
+            }
+
+            var body = response.getBody();
+            var parsed = JSON.parse(body);
+            var rate = parsed.data && parsed.data.USD;
+
+            if (!rate) {
+                gs.error('ReimbursementCurrencyAjax: Taxa USD não encontrada na resposta.');
+                return JSON.stringify({
+                    success: false,
+                    error: 'Taxa não encontrada.'
+                });
+            }
+
+            return JSON.stringify({
+                success: true,
+                rate: rate
+            });
+
+        } catch (e) {
+            gs.error('ReimbursementCurrencyAjax: ' + e.message);
+            return JSON.stringify({
+                success: false,
+                error: e.message
+            });
+        }
+    },
+
+    type: 'RefundCurrencyConverter'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-30 12:54:49</sys_created_on>
+        <sys_id>f7c3afb583a8c35027aba6d0deaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RefundCurrencyConverter</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_update_name>sys_script_include_f7c3afb583a8c35027aba6d0deaad363</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-30 12:54:49</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</application>
+        <file_path/>
+        <instance_id>acb5df9afbd7dad0843df4344eefdc1d</instance_id>
+        <instance_name>dev292903</instance_name>
+        <name>sys_script_include_f7c3afb583a8c35027aba6d0deaad363</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1902784_refund.RefundCurrencyConverter&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;RefundCurrencyConverter&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var RefundCurrencyConverter = Class.create();
+RefundCurrencyConverter.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+    getUSDRate: function() {
+        try {
+            var apiKey = gs.getProperty('x_[scope].reimbursement.fx_api_key');
+
+            if (!apiKey) {
+                gs.error('ReimbursementCurrencyAjax: API Key não configurada.');
+                return JSON.stringify({
+                    success: false,
+                    error: 'API Key não configurada.'
+                });
+            }
+
+            var request = new sn_ws.RESTMessageV2();
+            request.setHttpMethod('GET');
+            request.setEndpoint(
+                'https://api.freecurrencyapi.com/v1/latest' +
+                '?apikey=' + apiKey +
+                '&amp;base_currency=BRL' +
+                '&amp;currencies=USD'
+            );
+            request.setHttpTimeout(10000); // 10 segundos
+
+            var response = request.execute();
+            var statusCode = response.getStatusCode();
+
+            if (statusCode !== 200) {
+                gs.error('ReimbursementCurrencyAjax: HTTP ' + statusCode);
+                return JSON.stringify({
+                    success: false,
+                    error: 'Erro HTTP: ' + statusCode
+                });
+            }
+
+            var body = response.getBody();
+            var parsed = JSON.parse(body);
+            var rate = parsed.data &amp;&amp; parsed.data.USD;
+
+            if (!rate) {
+                gs.error('ReimbursementCurrencyAjax: Taxa USD não encontrada na resposta.');
+                return JSON.stringify({
+                    success: false,
+                    error: 'Taxa não encontrada.'
+                });
+            }
+
+            return JSON.stringify({
+                success: true,
+                rate: rate
+            });
+
+        } catch (e) {
+            gs.error('ReimbursementCurrencyAjax: ' + e.message);
+            return JSON.stringify({
+                success: false,
+                error: e.message
+            });
+        }
+    },
+
+    type: 'RefundCurrencyConverter'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-30 12:54:49&lt;/sys_created_on&gt;&lt;sys_id&gt;f7c3afb583a8c35027aba6d0deaad363&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;RefundCurrencyConverter&lt;/sys_name&gt;&lt;sys_package display_value="Refund" source="x_1902784_refund"&gt;7ef79c0d83240f1027aba6d0deaad34c&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Refund"&gt;7ef79c0d83240f1027aba6d0deaad34c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_f7c3afb583a8c35027aba6d0deaad363&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-30 12:54:49&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>18475678</payload_hash>
+        <record_name>RefundCurrencyConverter</record_name>
+        <reverted_from/>
+        <source>87abf50983604f1027aba6d0deaad340</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-30 12:54:49</sys_created_on>
+        <sys_id>a64563b983a8c35027aba6d0deaad329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dde74cd4b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-30 12:54:49</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>a24563b965a8c350be2eae19fa956c28</update_guid>
+        <update_guid_history>a24563b965a8c350be2eae19fa956c28:18475678</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-30 12:59:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1d1f8a974cb74614b39f1e4f4b1d0304</sys_id>
+        <sys_metadata>f7c3afb583a8c35027aba6d0deaad363</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RefundCurrencyConverter</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_scope_delete display_value="">876ee2fb12a14c5392e3855a5ffd5ec9</sys_scope_delete>
+        <sys_update_name>sys_script_include_f7c3afb583a8c35027aba6d0deaad363</sys_update_name>
+        <sys_update_version display_value="sys_script_include_f7c3afb583a8c35027aba6d0deaad363">a64563b983a8c35027aba6d0deaad329</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-30 12:59:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

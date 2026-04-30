@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="DELETE">
+        <authentication_type>inherit_from_parent</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <content/>
+        <function_name>Default GET</function_name>
+        <http_method>get</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>FreeCurrencyAPI [ Default GET ]</qualified_name>
+        <rest_endpoint>https://api.freecurrencyapi.com/v1/latest</rest_endpoint>
+        <rest_message display_value="FreeCurrencyAPI">bf28f7e583ac435027aba6d0deaad380</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-29 19:43:15</sys_created_on>
+        <sys_id>d729376983ac435027aba6d0deaad39b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_update_name>sys_rest_message_fn_d729376983ac435027aba6d0deaad39b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 19:43:15</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</application>
+        <file_path/>
+        <instance_id>acb5df9afbd7dad0843df4344eefdc1d</instance_id>
+        <instance_name>dev292903</instance_name>
+        <name>sys_rest_message_fn_d729376983ac435027aba6d0deaad39b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>FreeCurrencyAPI [ Default GET ]</qualified_name><rest_endpoint>https://api.freecurrencyapi.com/v1/latest</rest_endpoint><rest_message display_value="FreeCurrencyAPI">bf28f7e583ac435027aba6d0deaad380</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-29 19:43:15</sys_created_on><sys_id>d729376983ac435027aba6d0deaad39b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package><sys_policy/><sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope><sys_update_name>sys_rest_message_fn_d729376983ac435027aba6d0deaad39b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-29 19:43:15</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+        <payload_hash>-1400624067</payload_hash>
+        <record_name>Default GET</record_name>
+        <reverted_from/>
+        <source>87abf50983604f1027aba6d0deaad340</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-29 19:43:15</sys_created_on>
+        <sys_id>a729376983ac435027aba6d0deaad3a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19ddac45cfb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 19:43:15</sys_updated_on>
+        <type>HTTP Method</type>
+        <update_guid>a329376948ac4350c9f8c8f5ec3955a0</update_guid>
+        <update_guid_history>a329376948ac4350c9f8c8f5ec3955a0:-1400624067</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-30 18:14:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn">sys_rest_message_fn</sys_db_object>
+        <sys_id>16fec7f2b2b14c32858b394b89abcd44</sys_id>
+        <sys_metadata>d729376983ac435027aba6d0deaad39b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Default GET</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_scope_delete display_value="">876ee2fb12a14c5392e3855a5ffd5ec9</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_d729376983ac435027aba6d0deaad39b</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_d729376983ac435027aba6d0deaad39b">a729376983ac435027aba6d0deaad3a1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-30 18:14:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

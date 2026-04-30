@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Refund">cb64fff5832cc35027aba6d0deaad3bb</category>
+        <order>500</order>
+        <property display_value="x_1902784_refund.integration_retry_timeout" name="x_1902784_refund.integration_retry_timeout">37a6373d832cc35027aba6d0deaad32d</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-30 14:11:40</sys_created_on>
+        <sys_id>88e6fbf9832cc35027aba6d0deaad327</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1902784_refund.integration_retry_timeout.Refund</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_88e6fbf9832cc35027aba6d0deaad327</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-30 14:11:50</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>
