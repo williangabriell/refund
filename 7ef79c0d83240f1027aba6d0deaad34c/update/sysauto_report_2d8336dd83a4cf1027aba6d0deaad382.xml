@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_report">
+    <sysauto_report action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <address_list/>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <group_list/>
+        <include_detail>false</include_detail>
+        <include_with/>
+        <max_drift/>
+        <name>Scheduled execution of Pending and rejected refunds</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <omit_if_no_records>false</omit_if_no_records>
+        <output_type>XLSX</output_type>
+        <page_height_in_pixels>612</page_height_in_pixels>
+        <page_size>Letter</page_size>
+        <page_width_in_pixels>792</page_width_in_pixels>
+        <report display_value="Pending or rejected refunds">5c53be9d83a4cf1027aba6d0deaad33f</report>
+        <report_body/>
+        <report_title>Daily Report of Pending and Reproved Refunds.</report_title>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2026-04-28 20:00:26</run_start>
+        <run_time>1970-01-01 21:00:00</run_time>
+        <run_type>daily</run_type>
+        <sys_class_name>sysauto_report</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-28 20:07:50</sys_created_on>
+        <sys_id>2d8336dd83a4cf1027aba6d0deaad382</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Scheduled execution of Pending and rejected refunds</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_update_name>sysauto_report_2d8336dd83a4cf1027aba6d0deaad382</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-28 20:13:08</sys_updated_on>
+        <time_zone/>
+        <upgrade_safe>false</upgrade_safe>
+        <user_list>ac4af84183680f1027aba6d0deaad387</user_list>
+        <zip>false</zip>
+    </sysauto_report>
+</record_update>

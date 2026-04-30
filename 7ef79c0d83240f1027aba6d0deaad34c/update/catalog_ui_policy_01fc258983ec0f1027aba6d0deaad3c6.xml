@@ -7,7 +7,7 @@
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <catalog_conditions/>
-        <catalog_item display_value="Refund Request">9cd42cc583a40f1027aba6d0deaad32a</catalog_item>
+        <catalog_item/>
         <conditions/>
         <description/>
         <global>true</global>
