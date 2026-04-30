@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_process_flow">
+    <sys_process_flow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1902784_refund_refund_request">state=5^EQ<item display_value="Awaiting Payment" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="5"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <label>Awaiting Payment</label>
+        <name>Awaiting Payment</name>
+        <order>400</order>
+        <sys_class_name>sys_process_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-29 12:20:55</sys_created_on>
+        <sys_id>78d396658360435027aba6d0deaad327</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Awaiting Payment</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_update_name>sys_process_flow_78d396658360435027aba6d0deaad327</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 12:43:31</sys_updated_on>
+        <table>x_1902784_refund_refund_request</table>
+    </sys_process_flow>
+</record_update>

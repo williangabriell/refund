@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_canvas">
+    <par_dashboard_canvas action="INSERT_OR_UPDATE">
+        <dashboard display_value="Management Dashboard - HR">a6233aad8364435027aba6d0deaad302</dashboard>
+        <dashboard_tab display_value="Operations">772373ad836c435027aba6d0deaad304</dashboard_tab>
+        <layout>[{"sys_id":"4dc8df2983a8435027aba6d0deaad358","x":0,"y":0,"w":48,"h":15,"component_id":"2b1c080881e05dc63b917044290b233f","component_props":"{\"table\":\"x_1902784_refund_refund_request\",\"columnPreferenceKey\":\"\",\"fixedQuery\":\"state=2\",\"followFilters\":true,\"listTitle\":\"List of refunds pending approval\",\"columns\":\"number,opened_by,category,refund_amount_brl,refund_amount_usd,state\",\"maxColumns\":10,\"query\":\"state=2\",\"groupByField\":\"\",\"hideViewAll\":false,\"hideHighlightedValues\":false,\"showBorder\":false,\"bare\":true,\"highlightedValueConfigId\":\"\",\"hideHighlightContent\":false,\"highlightContent\":{\"patterns\":[],\"color\":\"\"},\"hideLinks\":false,\"nrlLandmark\":true,\"wordWrap\":false,\"overrideWordWrapUserPref\":false,\"maxCharLimit\":4000,\"hideEmptyStateImage\":false,\"hidePersonalization\":false,\"hideDotwalk\":false,\"hideColumnReorder\":false,\"hideRowSelector\":false,\"hideColumnGrouping\":false,\"hideColumnResizing\":false,\"hideColumnFiltering\":false,\"hideColumnSorting\":false,\"hideHeader\":false,\"hideTitle\":false,\"hideTitleRowCount\":false,\"hideLastRefreshedText\":false,\"hideRefreshButton\":false,\"hideInlineEditing\":false,\"isDashboard\":true,\"id\":\"maxColumns\",\"value\":10,\"propLabel\":\"Number of displayed columns\",\"noDebounce\":true}","can_edit":true},{"sys_id":"772a27e9832c435027aba6d0deaad376","x":0,"y":15,"w":48,"h":15,"component_id":"2b1c080881e05dc63b917044290b233f","component_props":"{\"table\":\"x_1902784_refund_refund_request\",\"columnPreferenceKey\":\"\",\"fixedQuery\":\"state=5\",\"followFilters\":true,\"listTitle\":\"List of refunds pending payment\",\"columns\":\"\",\"maxColumns\":10,\"query\":\"\",\"groupByField\":\"\",\"hideViewAll\":false,\"hideHighlightedValues\":false,\"showBorder\":false,\"bare\":true,\"highlightedValueConfigId\":\"\",\"hideHighlightContent\":false,\"highlightContent\":{\"patterns\":[],\"color\":\"\"},\"hideLinks\":false,\"nrlLandmark\":true,\"wordWrap\":false,\"overrideWordWrapUserPref\":false,\"maxCharLimit\":4000,\"hideEmptyStateImage\":false,\"hidePersonalization\":false,\"hideDotwalk\":false,\"hideColumnReorder\":false,\"hideRowSelector\":false,\"hideColumnGrouping\":false,\"hideColumnResizing\":false,\"hideColumnFiltering\":false,\"hideColumnSorting\":false,\"hideHeader\":false,\"hideTitle\":false,\"hideTitleRowCount\":false,\"hideLastRefreshedText\":false,\"hideRefreshButton\":false,\"hideInlineEditing\":false,\"isDashboard\":true,\"id\":\"query\",\"value\":\"\",\"propLabel\":\"filter\",\"noDebounce\":true}","can_edit":true}]</layout>
+        <sys_class_name>par_dashboard_canvas</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-29 19:17:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>443373ad836c435027aba6d0deaad308</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_update_name>par_dashboard_canvas_443373ad836c435027aba6d0deaad308</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 19:17:04</sys_updated_on>
+    </par_dashboard_canvas>
+</record_update>

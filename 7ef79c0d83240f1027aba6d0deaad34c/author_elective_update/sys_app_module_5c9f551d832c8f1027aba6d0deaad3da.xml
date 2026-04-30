@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Refund Request">0ecd418983e80f1027aba6d0deaad3fb</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint>List of  all refunds requested</hint>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Refunds Requested</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1902784_refund_refund_request</name>
+        <order>200</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1902784_refund.hr_manager,admin</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-28 13:55:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5c9f551d832c8f1027aba6d0deaad3da</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Refunds Requested</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_update_name>sys_app_module_5c9f551d832c8f1027aba6d0deaad3da</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 13:06:16</sys_updated_on>
+        <timeline_page/>
+        <title>Refunds Requested</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</application>
+        <file_path/>
+        <instance_id>acb5df9afbd7dad0843df4344eefdc1d</instance_id>
+        <instance_name>dev292903</instance_name>
+        <name>sys_app_module_5c9f551d832c8f1027aba6d0deaad3da</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Refund Request">0ecd418983e80f1027aba6d0deaad3fb</application><assessment/><device_type/><filter/><hint>List of  all refunds requested</hint><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Refunds Requested</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1902784_refund_refund_request</name><order>200</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_1902784_refund.hr_manager,admin</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-28 13:55:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5c9f551d832c8f1027aba6d0deaad3da</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Refunds Requested</sys_name><sys_overrides/><sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package><sys_policy/><sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope><sys_update_name>sys_app_module_5c9f551d832c8f1027aba6d0deaad3da</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-29 13:06:16</sys_updated_on><timeline_page/><title>Refunds Requested</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1701306842</payload_hash>
+        <record_name>Refunds Requested</record_name>
+        <reverted_from/>
+        <source>87abf50983604f1027aba6d0deaad340</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-29 13:06:16</sys_created_on>
+        <sys_id>945e16e983a0435027aba6d0deaad312</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19dd958ea020000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 13:06:16</sys_updated_on>
+        <type>Module</type>
+        <update_guid>145e16e99aa0435000397452c258e711</update_guid>
+        <update_guid_history>145e16e99aa0435000397452c258e711:1701306842,f35a1ea150a043504130f111f6021103:2128410423,120125dd712c8f1061e86a5fb2bcd606:652026297,7cff515d6f2c8f10e0d2e2298702b462:1740303137</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Refunds Requested">d95d66298324435027aba6d0deaad32b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-04-29 14:11:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>183088ba96f34b528d860d4c97d0c9e4</sys_id>
+        <sys_metadata>5c9f551d832c8f1027aba6d0deaad3da</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refunds Requested</sys_name>
+        <sys_package display_value="Refund" source="x_1902784_refund">7ef79c0d83240f1027aba6d0deaad34c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Refund">7ef79c0d83240f1027aba6d0deaad34c</sys_scope>
+        <sys_scope_delete display_value="">876ee2fb12a14c5392e3855a5ffd5ec9</sys_scope_delete>
+        <sys_update_name>sys_app_module_5c9f551d832c8f1027aba6d0deaad3da</sys_update_name>
+        <sys_update_version display_value="sys_app_module_5c9f551d832c8f1027aba6d0deaad3da">945e16e983a0435027aba6d0deaad312</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-04-29 14:11:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

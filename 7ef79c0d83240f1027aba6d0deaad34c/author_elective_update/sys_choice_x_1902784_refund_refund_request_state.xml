@@ -58,19 +58,19 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Awaiting Manager's Approval</label>
+            <label>Open</label>
             <language>en</language>
             <name>x_1902784_refund_refund_request</name>
             <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-27 17:02:30</sys_created_on>
+            <sys_created_on>2026-04-29 12:32:29</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>1</sys_mod_count>
+            <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-27 18:43:44</sys_updated_on>
-            <value>2</value>
+            <sys_updated_on>2026-04-29 12:32:29</sys_updated_on>
+            <value>1</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -96,19 +96,19 @@
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Resolved</label>
+            <label>Awaiting Manager's Approval</label>
             <language>en</language>
             <name>x_1902784_refund_refund_request</name>
             <sequence>2</sequence>
             <synonyms/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-04-27 17:02:41</sys_created_on>
+            <sys_created_on>2026-04-27 17:02:30</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_mod_count>2</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-04-28 14:26:21</sys_updated_on>
-            <value>3</value>
+            <sys_updated_on>2026-04-29 12:32:45</sys_updated_on>
+            <value>2</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -185,6 +185,25 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2026-04-28 11:48:02</sys_updated_on>
             <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resolved</label>
+            <language>en</language>
+            <name>x_1902784_refund_refund_request</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-04-27 17:02:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-04-29 12:32:40</sys_updated_on>
+            <value>3</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
